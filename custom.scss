@@ -1,0 +1,18 @@
+
+$theme-colors: (
+  "primary": #51b400,
+  "secondary": #ff710a,
+  "warning": #3f2502,
+);
+
+$card-border-color: #51b400;
+$card-border-width: 2px;
+$card-spacer-x: 5px;
+$card-spacer-y: 5px;
+$card-deck-margin: 5px;
+
+$font-family-sans-serif: "Montserrat";
+$font-family-monospace: "Aesthet Nova";
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";

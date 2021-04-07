@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="custom.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+
+  <div class="btn-group container-fluid" role="group" aria-label="Basic example">
+    <button type="button" class="btn m-1 btn-primary" onclick="filterSelection('winter')">Winter</button>
+    <button type="button" class="btn m-1 btn-primary" onclick="filterSelection('spring')">Spring</button>
+    <button type="button" class="btn m-1 btn-primary" onclick="filterSelection('summer')">Summer</button>
+    <button type="button" class="btn m-1 btn-primary" onclick="filterSelection('fall')">Fall</button>
+  </div>
+
+  <div  class="btn-group container-fluid" role="group" aria-label="Basic example">
+    <button type="button" class="btn m-1 btn-primary" onclick="filterSelection('all')">Show All</button>
+  </div>
+
+  <div id="tsk1" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Stop and Listen</h5>
+      <p class="card-text">Stand still, try not to make any noise, and listen for 60 seconds. What do you hear?</p>
+            <p class="card-text">Leaves rustling, wind blowing, birds chirping, water running?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction1()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk2" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer fall winter spring" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Cardinal Directions</h5>
+      <p class="card-text">Figure out which direction you are facing, and then figure out the other four cardinal directions (North, South, East, and West)</p>
+      <p class="card-text">Remember the sun rises in the east and sets in the west. If it is morning, the sun will be in the east.</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction2()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk3" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv winter spring summer fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Find a Tree</h5>
+      <p class="card-text">Look around for a tree that you recognize. What kind of tree is it? Are there other nearby?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction3()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk11" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Moss or Lichen?</h5>
+      <p class="card-text">Find a tree or rock with either moss or lichen growing on it. Which is it? How can you tell? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction11()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk10" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring" style="width: 18rem;">
+    <div class="card-body">
+      <h6 class="card-title-sub">Identify</h6>
+      <h5 class="card-title">Leaf</h5>
+      <p class="card-text">Look for and identify a leaf. What kind of leaf is it? What plant does it belong to? How can you tell? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction10()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+</div>
+
+  <div id="tsk4" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Falling Leaves</h5>
+      <img src="leavesinhand.jpg" class="card-img-top" alt="A bundle of brown oak leaves being held up by a hand.">
+      <p class="card-text">Stand and watch until you see a leaf fall. What tree did it come from? What color is it? Did it fall fast or slow?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction4()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk5" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv winter" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Footprints</h5>
+      <p class="card-text">Find a fresh patch of snow and walk across it. Look back at your footsteps. Compare them to any other footsteps you see.</p>
+      <p class="card-text">Try walking backwards. What direction does it look like you were walking in?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction5()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk14" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Animal Tracks</h5>
+      <p class="card-text"> Even in nature, you can sometimes see evidence of humans. Can you spot anything manmade instead of natural? </p>
+    <p class="card-text"> Trails or trail markers, bird houses or feeders, litter, geocache boxes?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction14()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+</div>
+
+  <div id="tsk9" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring" style="width: 18rem;">
+    <div class="card-body">
+      <h6 class="card-title-sub">Identify</h6>
+      <h5 class="card-title">Flower</h5>
+      <p class="card-text">Look for and identify a flower. What kind of flower is it? What plant does it belong to? How can you tell? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction9()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+
+  <div id="tsk6" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv winter spring summer fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">What's on the Ground?</h5>
+      <p class="card-text">Take ten steps and look at the ground beneath your feet. What are you stepping on?</p>
+      <p class="card-text">Grass, leaves, dirt, stones, sand?</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction6()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk7" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h6 class="card-title-sub">Identify</h6>
+      <h5 class="card-title">Bird</h5>
+      <p class="card-text">Look for and identify a bird. What kind of bird is it? How can you tell? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction7()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk15" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer fall winter spring" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Five Senses</h5>
+      <p class="card-text">Stand for a second and identify something you can taste, smell, see, hear, and touch?</p>
+      <p class="card-text">Instead of tasting anything, just imagine what something would taste like! You should not put things from the ground or other natural places into your mouth.</p>
+      <a href="#" class="btn btn-primary" onclick="myFunction15()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk8" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h6 class="card-title-sub">Identify</h6>
+      <h5 class="card-title">Tree</h5>
+      <p class="card-text">Look for and identify a tree. What kind of tree is it? How can you tell? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction8()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk12" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv winter" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Evergreen</h5>
+      <p class="card-text">Are there any trees that still have green leaves? Do you know what kind of tree it is? </p>
+            <p class="card-text"> If you get stuck, try reading more on the Leaf website! </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction12()">Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="tsk13" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv summer spring winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Animal Tracks</h5>
+      <p class="card-text"> Just because you can't see any animals doesn't mean you can't see evidence of animals. Can you spot any tracks, trails, or things left behind? </p>
+    <p class="card-text"> Nests, animal tracks, broken branches, chewed on leaves? </p>
+      <a href="#" class="btn btn-primary" onclick="myFunction13()" >Done!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+  <div id="donecrd" class="container d-flex flex-column flex-fill align-items-center justify-content-center tsk">
+  <div class="card filterDiv spring summer winter fall" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Well done!</h5>
+      <img src="leaf-512x512.png" class="card-img-top" alt="Leaf logo.">
+      <p class="card-text">Great job being mindful on this nature walk. What did you see and hear? What did you learn?</p>
+      <a href="#" class="btn btn-primary" onclick="window.location.reload();"> Start over!</a>
+       <!-- <a href="#" class="btn btn-secondary">Skip</a> -->
+    </div>
+  </div>
+  </div>
+
+
+</body>
+<script type="text/javascript" src="index.js">
+</script>
+</html>

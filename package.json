@@ -1,0 +1,14 @@
+{
+  "name": "leafproto4",
+  "version": "1.0.0",
+  "description": "leaf proto 4 with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mads",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
+}
