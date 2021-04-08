@@ -38,10 +38,10 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("myBtnContainer"); 
 var btnContainer2 = document.getElementById("myBtnContainer2");
 
-var btns = btnContainer.getElementsByClassName("btn");
+var btns = btnContainer.getElementsByClassName("done");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
 		var current = document.getElementsByClassName("active");
@@ -59,6 +59,7 @@ function myFunction1() {
     a.style.display = "none";
   }
 }
+
 
 function myFunction2() {
   var b = document.getElementById("tsk2");
@@ -79,7 +80,7 @@ function myFunction3() {
 }
 
 function myFunction4() {
-  var debug = document.getElementById("tsk4");
+  var d = document.getElementById("tsk4");
   if (d.style.display === "none") {
     d.style.display = "block";
   } else {
